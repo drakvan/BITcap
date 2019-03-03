@@ -64,7 +64,7 @@ class ModulesView extends PolymerElement {
         margin-bottom: 5px;
     }
 </style>
-<h2>Módulos</h2>
+<h2>Redes Sociales</h2>
 
 <div class="modules-container">
     <template is="dom-repeat" items="[[modules]]" as="module">

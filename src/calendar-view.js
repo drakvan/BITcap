@@ -26,7 +26,7 @@ class CalendarView extends PolymerElement {
     .module {
         width: 250px;
         text-align: center;
-        border: 2px solid #EC6C2D;
+        border: 2px solid #cdeaf7;
         margin: 5px;
     }
 
@@ -34,7 +34,7 @@ class CalendarView extends PolymerElement {
         padding-top: 10px;
         margin-bottom: 10px;
         width: 100%;
-        background-color: #EC6C2D;
+        background-color: #2d76ec;
         height: 80px;
         color: white;
         vertical-align: middle;
@@ -52,6 +52,7 @@ class CalendarView extends PolymerElement {
       margin-top: 15px;
     }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="card">
     <div class="calendar">
         <template is="dom-repeat" items="[[calendar]]" as="element">
@@ -61,16 +62,22 @@ class CalendarView extends PolymerElement {
                   </div>
                   <div class="info">
                     <div class="row">
-                      <iron-icon icon="icons:event"></iron-icon>
+                    <iron-icon icon="icons:date-range"></iron-icon>
                       [[element.date]]
                     </div>
                     <div class="row">
-                      <iron-icon icon="icons:home"></iron-icon>
-                      Cupo: [[element.number]] personas
+                      <iron-icon icon="icons:face"></iron-icon>
+                      [[element.number]] personas twittearon 
                     </div>
                     <div class="row">
-                      <iron-icon icon="icons:watch-later"></iron-icon>
-                      [[element.begin]] - [[element.end]]
+                      <iron-icon icon="icons:timeline"></iron-icon>
+                      [[element.begin]] de alcance total
+
+                    </div>
+                    <div class="row">
+                      <iron-icon icon="icons:thumbs-up-down"></iron-icon>
+                      [[element.end]]  de impresiones
+
                     </div>
                     <div class="row">
                       <template is="dom-repeat" items="[[element.courses]]" as="course">
@@ -83,16 +90,7 @@ class CalendarView extends PolymerElement {
     </div>
 </div>
 
-<div class="card">
-    <h2>Sede Postal</h2>
-    <blackquote>
-        Reembolsos 48 BIS. Col Postal, CP. 03410, Ciudad de México, México. Planta Baja
-    </blackquote>
-    <div class="location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.506482127646!2d-99.14304424995494!3d19.390510546986537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fefeb9cae4df%3A0xb807ff7a9d512ede!2sReembolsos+48BIS%2C+Postal%2C+03410+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1531864925610"
-                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-</div>
+
     `;
   }
   

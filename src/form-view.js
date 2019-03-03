@@ -22,16 +22,8 @@ class FormView extends PolymerElement {
         }
 </style>
       <div class="content">
-            <h2>Forma parte de esta experiencia</h2>
-            <label for="name">Nombre completo</label>
-            <input type="text" class="form-control" placeholder="Nombre completo" id="name" name="name">
-            <label for="modules">Curso o módulos de interés</label>
-            <input type="text" class="form-control" value$="[[courseField]]" placeholder="Curso o módulos de interés" id="modules" name="modules">
-            <label for="phone">Número celular</label>
-            <input type="text" class="form-control" placeholder="Número celular" id="phone" name="phone">
-            <label for="email">Correo electrónico</label>
-            <input type="text" class="form-control" placeholder="Correo electrónico" id="email">
-            <button type="button" class="btn btn-success" on-click="register">Solicitar información</button>
+            <h2>Te mostraremos la información más relevante en las redes sociales:</h2>
+            
 </div>
       </div>
     `;

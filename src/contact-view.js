@@ -64,17 +64,31 @@ class ContactView extends PolymerElement {
         }
     }
 </style>
- <div class="content">
-            <br>
+ <div class="content" style=”text-align: justify>
+           
             <h3><b>BITcap - Data</b>, nos dedicamos a la prestación de servicios de consultoría en Inteligencia de Negocios (BI) y Analítica de Negocios (BA).</h3>
-            <h3>Además contamos con expertos en todos los sectores de la economia como salud, retail, servicios profesionales, oil & gas, manufactura, TI, entre otros, agregando valor en el momento de procesar los datos que son objeto de análisis en las consultorías prestadas. <br><br><br></h3>
+            Además contamos con expertos en todos los sectores de la economia como salud, retail, servicios profesionales, oil & gas, manufactura, TI, entre otros, agregando valor en el momento de procesar los datos que son objeto de análisis en las consultorías prestadas. <br>
  </div>
  <div align = 'middle'>
-            <img align="center" src="https://www.wp101.com/wp-content/uploads/2016/04/analytics.jpg" alt="Smiley face"  height="42" width="42">
-            <img align="center" src="http://www.youngmarketing.co/wp-content/uploads/2015/04/google-analytics-tips-illustration.jpg" alt="Smiley face"  height="42" width="42">
-            <img align="center" src="http://www.audifarma.es/archivo/imagenes/blog/stockvault-web-analytics-concept---multicolor-version181081.jpg" alt="Smiley face" lign="center" height="42" width="42">
-            <img align="center" src="http://foxnet.es/wp-content/uploads/2018/02/Marketing-Analytics.jpg" alt="Smiley face" lign="center" height="42" width="42">
- </div>
+            <img align="center" src="https://www.wp101.com/wp-content/uploads/2016/04/analytics.jpg" alt="Smiley face"  height="10" width="10">
+            <img align="center" src="http://www.youngmarketing.co/wp-content/uploads/2015/04/google-analytics-tips-illustration.jpg" alt="Smiley face"  height="20" width="20">
+            <img align="center" src="http://www.audifarma.es/archivo/imagenes/blog/stockvault-web-analytics-concept---multicolor-version181081.jpg" alt="Smiley face" lign="center" height="20" width="20">
+            <img align="center" src="http://foxnet.es/wp-content/uploads/2018/02/Marketing-Analytics.jpg" alt="Smiley face" lign="center" height="20" width="20">
+            <br>    
+   </div>
+
+
+ <div class="card">
+    <h2>Nuestra ubicación </h2>
+    <blackquote>
+      Tepeji 21; Colonia Roma Sur 06760 Ciudad de México, CDMX
+    </blackquote>
+    <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1021060608355!2d-99.16101429999999!3d19.407993799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff1618f905c3%3A0xa9b85ede02240242!2sTepeji+21%2C+Roma+Sur%2C+06760+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1551631234437
+"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
 
     `;
   }
