@@ -1,13 +1,3 @@
-/**
- * @license
- * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
- * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
- * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
- * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
- * Code distributed by Google as part of the polymer project is also
- * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
- */
-
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/iron-icon/iron-icon.js';
@@ -44,7 +34,7 @@ class ModulesView extends PolymerElement {
     }
     
     .header {
-        background-color: #EC6C2D;
+        background-color: #2D76EC;
         color: white;
         margin: -16px;
         display: flex;
@@ -84,17 +74,7 @@ class ModulesView extends PolymerElement {
             </div>
             <div class="body">
                 <div class="info item">
-                    <h3>Inversión</h3>
-                    <blackquote>
-                    <iron-icon icon="icons:credit-card"></iron-icon>
-                        $[[module.price]] MXN
-                    </blackquote>
-                    <h3>Duración</h3>
-                    <blackquote>
-                    <iron-icon icon="icons:watch-later"></iron-icon>
-                        [[module.duration]] horas
-                    </blackquote>
-                    <h3>Cursos</h3>
+                    <h3>Total Usuarios</h3>
                     <ul>
                         <template is="dom-repeat" items="[[module.courses]]" as="course">
                             <li>[[course]]</li>
@@ -102,7 +82,7 @@ class ModulesView extends PolymerElement {
                     </ul>
                 </div>
                 <div class="summary item">
-                    <h3>Temario</h3>
+                    <h3>Hashtag</h3>
                     <ul>
                         <template is="dom-repeat" items="[[module.summary]]" as="topic">
                             <li>[[topic]]</li>
@@ -111,7 +91,7 @@ class ModulesView extends PolymerElement {
                 </div>
             </div>
             <div class="footer">
-                <div class="button" on-click="callToAction">Me interesa este módulo</div>
+                <div class="button" on-click="callToAction">Ver más</div>
             </div>
         </div>
     </template>

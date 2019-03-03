@@ -96,9 +96,9 @@ class MyApp extends PolymerElement {
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bit-logo.jpg" alt="Bitcap">
           </app-toolbar>
           <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-            <a name="courses" href="[[rootPath]]courses">Cursos</a>
-            <a name="modules" href="[[rootPath]]modules">Módulos de aprendizaje</a>
-            <a name="calendar" href="[[rootPath]]calendar">Calendario y ubicación</a>
+            <!-- <a name="courses" href="[[rootPath]]courses">C</a>-->
+            <a name="modules" href="[[rootPath]]modules">Análitica Redes sociales</a>
+            <a name="calendar" href="[[rootPath]]calendar">Tendencias y ubicación</a>
             <a name="form" href="[[rootPath]]form">Inscribirse</a>
             <a name="contact" href="[[rootPath]]contact">¿Quiénes somos?</a>
             <template is="dom-if" if="[[!isLogged]]">

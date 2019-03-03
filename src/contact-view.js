@@ -69,7 +69,7 @@ class ContactView extends PolymerElement {
             <h3><b>BITcap - Data</b>, nos dedicamos a la prestación de servicios de consultoría en Inteligencia de Negocios (BI) y Analítica de Negocios (BA).</h3>
             <h3>Además contamos con expertos en todos los sectores de la economia como salud, retail, servicios profesionales, oil & gas, manufactura, TI, entre otros, agregando valor en el momento de procesar los datos que son objeto de análisis en las consultorías prestadas. <br><br><br></h3>
  </div>
- <div>
+ <div align = 'middle'>
             <img align="center" src="https://www.wp101.com/wp-content/uploads/2016/04/analytics.jpg" alt="Smiley face"  height="42" width="42">
             <img align="center" src="http://www.youngmarketing.co/wp-content/uploads/2015/04/google-analytics-tips-illustration.jpg" alt="Smiley face"  height="42" width="42">
             <img align="center" src="http://www.audifarma.es/archivo/imagenes/blog/stockvault-web-analytics-concept---multicolor-version181081.jpg" alt="Smiley face" lign="center" height="42" width="42">
