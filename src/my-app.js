@@ -1,13 +1,3 @@
-/**
- * @license
- * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
- * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
- * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
- * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
- * Code distributed by Google as part of the polymer project is also
- * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
- */
-
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import {setPassiveTouchGestures, setRootPath} from '@polymer/polymer/lib/utils/settings.js';
 import '@polymer/app-layout/app-drawer/app-drawer.js';
@@ -103,14 +93,13 @@ class MyApp extends PolymerElement {
         <!-- Drawer content -->
         <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
           <app-toolbar>
-          <img src="images/icon.png" alt="Bitcap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bit-logo.jpg" alt="Bitcap">
           </app-toolbar>
           <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
             <a name="courses" href="[[rootPath]]courses">Cursos</a>
             <a name="modules" href="[[rootPath]]modules">Módulos de aprendizaje</a>
             <a name="calendar" href="[[rootPath]]calendar">Calendario y ubicación</a>
             <a name="form" href="[[rootPath]]form">Inscribirse</a>
-            <a name="method" href="[[rootPath]]method">Metodología e inversión</a>
             <a name="contact" href="[[rootPath]]contact">¿Quiénes somos?</a>
             <template is="dom-if" if="[[!isLogged]]">
             <a name="login" href="[[rootPath]]login">Iniciar sesión</a>
@@ -129,7 +118,7 @@ class MyApp extends PolymerElement {
           <app-header slot="header" condenses reveals fixed effects="waterfall">
             <app-toolbar>
               <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-              <div main-title="">Bitcap</div>
+              <div main-title=""><h2><b>BITcap - Data</b></h2></div>
             </app-toolbar>
           </app-header>
 
