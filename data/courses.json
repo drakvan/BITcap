@@ -1,0 +1,51 @@
+{
+  "info": {
+    "data": "courses"
+  },
+  "response": [
+    {
+      "name": "Backend NodeJS",
+      "goal": "Crear api rest, darles mantenimiento y publicarlas para su consumo.",
+      "price": 8100,
+      "duration": 20,
+      "mentoring": 2,
+      "stack": [{
+        "name": "JavaScript (ECMAScript 7)",
+        "icon": "js-brands.svg"
+      },
+        {
+          "name": "Git (GitHub)",
+          "icon": "github-brands.svg"
+        },
+        {
+          "name": "NodeJS 8",
+          "icon": "node-js-brands.svg"
+        },
+        {
+          "name": "Express 4",
+          "icon": "express.png"
+        }
+      ]
+    },
+    {
+      "name": "Maquetación y diseño web",
+      "goal": "Generar páginas web responsive con enfoque landing pages",
+      "price": 5670,
+      "duration": 14,
+      "mentoring": 1.5,
+      "stack": [{
+        "name": "HTML 5",
+        "icon": "html5-brands.svg"
+      },
+        {
+          "name": "CSS 3",
+          "icon": "css3-alt-brands.svg"
+        },
+        {
+          "name": "SASS",
+          "icon": "sass-brands.svg"
+        }
+      ]
+    }
+  ]
+}
