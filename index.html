@@ -10,12 +10,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="generator" content="Polymer Starter Kit">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>My App</title>
+    <title>Code Planet | Capacitaciones técnicas </title>
     <meta name="description" content="My App description">
 
     <!--
@@ -59,19 +59,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta name="msapplication-TileColor" content="#3f51b5">
     <meta name="msapplication-tap-highlight" content="no">
 
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" defer/>
+
     <script>
       /**
-      * [polymer-root-path]
-      *
-      * Leave this line unchanged if you intend to serve your app from the root
-      * path (e.g., with URLs like `my.domain/` and `my.domain/view1`).
-      *
-      * If you intend to serve your app from a non-root path (e.g., with URLs
-      * like `my.domain/my-app/` and `my.domain/my-app/view1`), edit this line
-      * to indicate the path from which you'll be serving, including leading
-      * and trailing slashes (e.g., `/my-app/`).
-      */
-      window.MyAppGlobals = { rootPath: '/' };
+       * [polymer-root-path]
+       *
+       * Leave this line unchanged if you intend to serve your app from the root
+       * path (e.g., with URLs like `my.domain/` and `my.domain/view1`).
+       *
+       * If you intend to serve your app from a non-root path (e.g., with URLs
+       * like `my.domain/my-app/` and `my.domain/my-app/view1`), edit this line
+       * to indicate the path from which you'll be serving, including leading
+       * and trailing slashes (e.g., `/my-app/`).
+       */
+      window.MyAppGlobals = {rootPath: '/'};
 
       // Load and register pre-caching Service Worker
       if ('serviceWorker' in navigator) {
@@ -81,30 +83,97 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           });
         });
       }
+
+      Notification.requestPermission((status) => {
+        console.log('Notification permission status:', status);
+      });
+
+      const pushNotification = (title, message) => {
+        const options = {
+          body: message,
+          icon: 'icons/icon-144x144.png',
+          vibrate: [100, 50, 100],
+          data: {
+            dateOfArrival: Date.now(),
+            primaryKey: 1
+          }
+        };
+
+        if (Notification.permission === 'granted') {
+          navigator.serviceWorker.getRegistration().then(register => {
+            if (register) {
+              register.showNotification(title, options);
+            }
+          });
+        }
+
+      };
     </script>
 
     <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
     <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" defer></script>
+
+    
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDOMfHwS_GKAlJrSSzeAUotMeOmoX1uqDI",
+    authDomain: "mlanalytics-d2463.firebaseapp.com",
+    databaseURL: "https://mlanalytics-d2463.firebaseio.com",
+    projectId: "mlanalytics-d2463",
+    storageBucket: "mlanalytics-d2463.appspot.com",
+    messagingSenderId: "147181585719"
+  };
+  firebase.initializeApp(config);
+
+      const database = firebase.database();
+      const clients = database.ref('clients/');
+    </script>
 
     <!-- Load your application shell -->
     <script type="module" src="src/my-app.js"></script>
 
     <!-- Add any global styles for body, document, etc. -->
     <style>
-      body {
-        margin: 0;
-        font-family: "Roboto", "Noto", sans-serif;
-        line-height: 1.5;
-        min-height: 100vh;
-        background-color: #eeeeee;
-      }
+        body {
+            margin: 0;
+            font-family: "Roboto", "Noto", sans-serif;
+            line-height: 1.5;
+            min-height: 100vh;
+            background-color: #eeeeee;
+        }
     </style>
-  </head>
-  <body>
-    <my-app></my-app>
-    <noscript>
-      Please enable JavaScript to view this website.
-    </noscript>
-    <!-- Built with love using Polymer Starter Kit -->
-  </body>
+</head>
+<body>
+<my-app></my-app>
+<script>
+  const app = document.querySelector('my-app');
+  app.addEventListener('toastr-message', event => {
+    switch (event.detail.type) {
+      case "success":
+        toastr.success(event.detail.body, event.detail.header);
+        break;
+      case "warning":
+        toastr.warning(event.detail.body, event.detail.header);
+        break;
+      case "error":
+        toastr.error(event.detail.body, event.detail.header);
+        break;
+      case "info":
+        toastr.info(event.detail.body, event.detail.header);
+        break;
+    }
+  });
+</script>
+<noscript>
+    Please enable JavaScript to view this website.
+</noscript>
+<!-- Built with love using Polymer Starter Kit -->
+</body>
 </html>

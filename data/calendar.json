@@ -1,0 +1,64 @@
+{
+  "info": {
+    "data": "calendar"
+  },
+  "response": [
+    {
+      "title": "Maquetado HTML 5",
+      "courses": ["Maquetación y diseño web"],
+      "number": "6",
+      "date": "25 de agosto 2018",
+      "begin": "10h00",
+      "end": "14h00"
+    },
+    {
+      "title": "Diseño web CSS 3",
+      "courses": ["Maquetación y diseño web"],
+      "number": "6",
+      "date": "01 de septiembre 2018",
+      "begin": "10h00",
+      "end": "14h00"
+    },
+    {
+      "title": "SASS",
+      "courses": ["Maquetación y diseño web"],
+      "number": "6",
+      "date": "08 de septiembre 2018",
+      "begin": "10h00",
+      "end": "14h00"
+    },
+    {
+      "title": "Control de versiones",
+      "courses": ["Backend NodeJS"],
+      "number": "6",
+      "date": "25 de agosto 2018",
+      "begin": "15h00",
+      "end": "19h00"
+    },
+    {
+      "title": "JavaScript ES7",
+      "courses": ["Backend NodeJS"],
+      "number": "6",
+      "date": "01 de septiembre 2018",
+      "begin": "14h00",
+      "end": "20h00"
+    },
+    {
+      "title": "Node JS",
+      "courses": ["Backend NodeJS"],
+      "number": "6",
+      "date": "08 de septiembre 2018",
+      "begin": "14h00",
+      "end": "20h00"
+    },
+    {
+      "title": "API Rest",
+      "courses": ["Backend NodeJS"],
+      "number": "6",
+      "date": "22 de septiembre 2018",
+      "begin": "15h00",
+      "end": "19h00"
+    }
+  ]
+
+}
