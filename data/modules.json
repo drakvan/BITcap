@@ -4,114 +4,56 @@
   },
   "response": [
     {
-      "name": "Control de versiones",
-      "price": "1620",
-      "duration": "4",
+      "name": "Twitter",
       "courses": [
-        "NodeJS"
+        "336 millones"
       ],
       "summary": [
-        "Repositorios",
-        "Flujo para arquitecturas remote",
-        "Branches",
-        "Resolución de conflictos",
-        "Tags",
-        "Comandos (add, commit, branch, remote, push, merge, fetch, etc…)"
+        "#FelizDomingo",
+        "#SoyElTípicoQue",
+        "#DíaDeLaFamilia",
+        "#GRACIASELENCO AAM",
+        "#TEAMOJULIANTINA",
+        "#GRACIASBARBAR",
+        "#FinalAmarAMuerte",
+        "#BuenDomingo",
+        "#MadridSalvaje"
       ]
     },
     {
-      "name": "JavaScript ES7",
-      "price": "2430",
-      "duration": "6",
+      "name": "Facebook",
       "courses": [
-        "NodeJS"
+        "2,167 millones"
       ],
       "summary": [
-        "Variables",
-        "Condicionales",
-        "Iteradores",
-        "Objetos complejos",
-        "Arrow functions",
-        "Clases",
-        "Módulos"
+        "#love",
+        "#instagood",
+        "#photooftheday",
+        "#beautiful",
+        "#fashion",
+        "#tbt",
+        "#happy",
+        "#cute",
+        "#followme",
+        "#like4like"
       ]
     },
     {
-      "name": "NodeJS",
-      "price": "2430",
-      "duration": "6",
+      "name": "Instagram",
       "courses": [
-        "NodeJS"
+        "1,000 millones"
       ],
       "summary": [
-        "Environment",
-        "Scripts",
-        "Módulo FileSystem",
-        "Importación / Exportación",
-        "Dependencias y devDependencies (manejo de NPM y YARN)",
-        "Publicación del módulo nodeJS con Heroku"
-      ]
-    },
-    {
-      "name": "API Rest",
-      "price": "1620",
-      "duration": "4",
-      "courses": [
-        "NodeJS"
-      ],
-      "summary": [
-        "Códigos HTTP",
-        "Métodos GET, PUT, DELETE, POST",
-        "Query Params",
-        "Manejo de excepciones",
-        "Manejo de archivos como almacenamiento",
-        "Objetos Request/Response"
-      ]
-    },
-    {
-      "name": "Maquetado HTML 5",
-      "price": "1,620",
-      "duration": "4",
-      "courses": [
-        "Maquetación y diseño web"
-      ],
-      "summary": [
-        "Estructura HTML",
-        "Etiquetas meta",
-        "Etiquetas de sección: section, nav, article, header, footer",
-        "Etiquetas de texto: h, p, span",
-        "Listas: ol, ul, li",
-        "Cajas con div"
-      ]
-    },
-    {
-      "name": "Diseño web CSS 3",
-      "price": "2,430",
-      "duration": "6",
-      "courses": [
-        "Maquetación y diseño web"
-      ],
-      "summary": [
-        "Selectores",
-        "Estilos de caja: width, height, align, border, margin, pading",
-        "Estilos de texto: font-size, color, bold, italic, underline",
-        "Display: block, inline, flex, none",
-        "Responsive design con medias queries"
-      ]
-    },
-    {
-      "name": "SASS",
-      "price": "1,620",
-      "duration": "4",
-      "courses": [
-        "Maquetación y diseño web"
-      ],
-      "summary": [
-        "Variables",
-        "Importación de Archivos (@import)",
-        "Anidación de Selectores",
-        "Estructuras de archivos para SASS",
-        "Generar CSS a partir de SASS"
+        "#love",
+        "#instagood",
+        "#photooftheday",
+        "#fashion",
+        "#beautiful",
+        "#happy",
+        "#cute",
+        "#tbt",
+        "#like4like",
+        "#followme"
       ]
     }
   ]
